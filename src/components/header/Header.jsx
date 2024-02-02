@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
+import Logo from "../../assets/logo-preto.png"
 
 const Header = () => {
     /*=============== TOGGLE MENU ===============*/
@@ -8,7 +9,12 @@ const Header = () => {
     return(
         <header className='header'>
         <nav className='nav container'>
-          <a href="index.html" className='nav__logo'>Greco</a>
+          <a href="index.html" className='nav__logo'><img src={Logo} alt="Logo Greco" style={{
+            width: "4rem",
+            alignItems: "center",
+            justifyContent: "center",
+            marginTop: "0.8rem",
+          }} /></a>
           
           <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
             <ul className='nav__list grid'>
