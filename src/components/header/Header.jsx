@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
-import Logo from "../../assets/logo-preto.png"
+// import Logo from ""
+// import Logo from "../../../public/imgs/logo-preto.png"
 
 const Header = () => {
     /*=============== TOGGLE MENU ===============*/
@@ -9,7 +10,7 @@ const Header = () => {
     return(
         <header className='header'>
         <nav className='nav container'>
-          <a href="index.html" className='nav__logo'><img src={Logo} alt="Logo Greco" style={{
+          <a href="index.html" className='nav__logo'><img src="https://avatars.githubusercontent.com/u/100162697?v=4" alt="Logo Greco" style={{
             width: "4rem",
             alignItems: "center",
             justifyContent: "center",
