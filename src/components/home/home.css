@@ -60,7 +60,7 @@
 }
 
 .home__img{
-    background: url(../../assets//perfil.png);
+    background: url('https://avatars.githubusercontent.com/u/100162697?v=4');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
