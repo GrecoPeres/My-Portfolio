@@ -25,49 +25,29 @@ const FrontEnd = () => {
               <div className="skills__data"><i class='bx bx-badge-check'></i>
                 <div>
                   <h3 className="skills__name">JavaScript</h3>
-                    <span className="skills__level"></span>
-                  
-                </div>
-              </div>
-
-              <div className="skills__data"><i class='bx bx-badge-check'></i>
-                <div>
-                  <h3 className="skills__name">
-                    <span className="skills__level"></span>
-                  </h3>
+                    <span className="skills__level">Intermediário</span>
                 </div>
               </div>
             </div>
             <div className="skills__group">
               <div className="skills__data"><i class='bx bx-badge-check'></i>
                 <div>
-                  <h3 className="skills__name">
-                    <span className="skills__level"></span>
-                  </h3>
+                  <h3 className="skills__name">Git</h3>
+                    <span className="skills__level">Intermediário</span>
                 </div>
               </div>
               
               <div className="skills__data"><i class='bx bx-badge-check'></i>
                 <div>
-                  <h3 className="skills__name">
-                    <span className="skills__level"></span>
-                  </h3>
+                  <h3 className="skills__name">React</h3>
+                    <span className="skills__level">Básico</span>
                 </div>
               </div>
 
               <div className="skills__data"><i class='bx bx-badge-check'></i>
                 <div>
-                  <h3 className="skills__name">
-                    <span className="skills__level"></span>
-                  </h3>
-                </div>
-              </div>
-
-              <div className="skills__data"><i class='bx bx-badge-check'></i>
-                <div>
-                  <h3 className="skills__name">
-                    <span className="skills__level"></span>
-                  </h3>
+                  <h3 className="skills__name">Flutter</h3>
+                    <span className="skills__level">Básico</span>
                 </div>
               </div>
             </div>
