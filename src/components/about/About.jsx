@@ -20,7 +20,7 @@ const About = () => {
                     Com 22 anos e formação em Sistemas de Informação, tenho 3 anos de experiência em desenvolvimento de sistemas. Sou apaixonado por esta área dinâmica e estou constantemente buscando aprendizado e aprimoramento. Minha sede de conhecimento me impulsiona a enfrentar desafios e a contribuir para inovações tecnológicas. Estou pronto para colaborar em projetos desafiadores, aplicando minhas habilidades e buscando sempre a excelência profissional.
                 </p>
 
-                <a download="" href={CV} className="button button--flex">
+                <a download={AboutImg} href={AboutImg} className="button button--flex">
                     Curriculum
                     <svg
                         class="button__icon"
