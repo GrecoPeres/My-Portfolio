@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./header.css";
-import LogoDark from "../../assets/logo-preto.png";
-import LogoLight from "../../assets/logo-branca.png";
+import LogoLight from "../../assets/logo-preto.png";
+import LogoDark from "../../assets/logo-branca.png";
 import DayNightToggle from 'react-day-and-night-toggle';
 
 const Header = () => {

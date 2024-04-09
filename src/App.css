@@ -99,6 +99,24 @@ body[data-theme=dark] {
   background-color: #242424;
 }
 
+[data-theme=dark] .nav__link{
+  color: #cac9c9;
+}
+
+[data-theme=dark] .nav__link:hover{
+  color: #fff;
+}
+[data-theme=dark] .skills__name,
+[data-theme=dark] .about__subtitle{
+  color: var(--text-color);
+}
+
+[data-theme=dark] .about__icon,
+[data-theme=dark] .skills__title,
+[data-theme=dark] .about__title{
+  color: #000;
+}
+
 body,
 button,
 input,
