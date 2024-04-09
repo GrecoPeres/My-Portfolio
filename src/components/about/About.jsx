@@ -1,7 +1,7 @@
 import React from 'react'
 import "./about.css";
 import AboutImg from "../../assets/perfil.png";
-import CV from "../../assets/Greco-CV.pdf";
+import CV from "../../assets/CV-Greco Fernando de Macedo Peres.pdf";
 import Info from './Info';
 
 const About = () => {
@@ -20,7 +20,7 @@ const About = () => {
                     Com 22 anos e formação em Sistemas de Informação, tenho 3 anos de experiência em desenvolvimento de sistemas. Sou apaixonado por esta área dinâmica e estou constantemente buscando aprendizado e aprimoramento. Minha sede de conhecimento me impulsiona a enfrentar desafios e a contribuir para inovações tecnológicas. Estou pronto para colaborar em projetos desafiadores, aplicando minhas habilidades e buscando sempre a excelência profissional.
                 </p>
 
-                <a download={AboutImg} href={AboutImg} className="button button--flex">
+                <a download={CV} href={CV} className="button button--flex">
                     Curriculum
                     <svg
                         class="button__icon"

@@ -1,20 +1,43 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import "./header.css";
-import Logo from "../../assets/logo-preto.png"
+import LogoDark from "../../assets/logo-preto.png";
+import LogoLight from "../../assets/logo-branca.png";
+import DayNightToggle from 'react-day-and-night-toggle';
 
 const Header = () => {
-    /*=============== TOGGLE MENU ===============*/
-    const[Toggle, showMenu] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('data-theme') === 'dark');
 
-    return(
-        <header className='header'>
-        <nav className='nav container'>
-          <a href="index.html" className='nav__logo'><img src={Logo} alt="Logo Greco" style={{
-            width: "4rem",
+  useEffect(() => {
+    const currentTheme = localStorage.getItem('data-theme');
+    if (currentTheme) {
+      document.body.setAttribute('data-theme', currentTheme);
+      setIsDarkMode(currentTheme === 'dark');
+    } else {
+      localStorage.setItem('data-theme', 'light');
+      document.body.setAttribute('data-theme', 'light');
+    }
+  }, []);
+
+  const handleChangeTheme = () => {
+    const newTheme = isDarkMode ? 'light' : 'dark';
+    setIsDarkMode(!isDarkMode);
+    localStorage.setItem('data-theme', newTheme);
+    document.body.setAttribute('data-theme', newTheme);
+  }
+
+  const [Toggle, showMenu] = useState(false);
+
+  return (
+    <header className='header'>
+      <nav className='nav container'>
+        <a href="index.html" className='nav__logo'>
+          <img src={isDarkMode ? LogoDark : LogoLight} alt="Logo Greco" style={{
+            width: "5rem",
             alignItems: "center",
             justifyContent: "center",
             marginTop: "0.8rem",
-          }} /></a>
+          }} />
+        </a>
           
           <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
             <ul className='nav__list grid'>
@@ -53,6 +76,7 @@ const Header = () => {
                   <i className='uil uil-message nav__icon'></i> Contato
                 </a>
               </li>
+              <DayNightToggle size={45} onChange={handleChangeTheme} checked={isDarkMode} />
             </ul>
             <i className='uil uil-times nav__close' onClick={() => showMenu(!Toggle)}></i>
           </div>
