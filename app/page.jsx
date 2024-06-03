@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-4 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
-            <h1 className="h1">Hello Word!<br/> I am <br/> <span className="text-accent">Greco Peres</span></h1>
+            <h1 className="h1"> <strong>Hello Word!</strong> <br/> I am <span className="text-accent">Greco Peres</span></h1>
             <p className="max-w-[500px] mb-9 text-white">Eu sou um desenvolvedor de sistemas, apaixonado pela área da programação e com muita sede de aprendizagem.</p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
