@@ -18,6 +18,13 @@
 
   .rounded-image {
     border-radius: 50%;
-  }  
+  }
   
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #00ff99;
+  }
 }
