@@ -9,10 +9,6 @@ const Header = () => {
     <header className="py-8 xl:py-4 text-white">
         <div className="container mx-auto flex justify-between items-center">
             {/* LOGO */}
-            {/* <Link href="/">
-            <h1 className="text4xl font-semibold">Gre<span className="text-accent">co</span></h1>
-            <img src="./" alt="" /> 
-            </Link> */}
 
             <Link href="/">
               <img src="/assets/logo-branca.png" alt="Logo" className="h-10" />
