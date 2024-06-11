@@ -33,13 +33,13 @@ const MobileNav = () => {
         return (
             <Sheet>
                 <SheetTrigger className="flex justify-center items-center">
-                    <CiMenuFries className="text-[32px] text-accent" />
+                    <CiMenuFries className="text-[32px] text-teal-300" />
                 </SheetTrigger>
                 <SheetContent className="flex flex-col">
                     <div className="mt-10 mb-20 text-center text-2xl flex justify-center">
                         <Link href="/">
                             {/* <h1 className='text-4xl font-semibold'>
-                                Gre<span className='text-accent'>co</span>
+                                Gre<span className='text-teal-300'>co</span>
                             </h1> */}
                             <img src="/assets/Logo-Branca-Full.png" width={100} height={100} alt="Logo" />
                         </Link>
@@ -48,7 +48,7 @@ const MobileNav = () => {
                     <nav className='flex flex-col justify-center items-center gap-8'>
                         {links.map((link, index)=> {
                             return(
-                                <Link href={link.path} key={index} className={`${link.path === pathname && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent transition-all`}>
+                                <Link href={link.path} key={index} className={`${link.path === pathname && "text-teal-300 border-b-2 border-teal-300"} text-xl capitalize hover:text-teal-300 transition-all`}>
                                     {link.name}
                                 </Link>
                             )

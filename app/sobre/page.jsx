@@ -187,11 +187,11 @@ const Sobre = () => {
                     {experience.items.map((item, index) => {
                       return (
                       <li key={index} className='bg-[#232329] h-[134px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1'>
-                        <span className='text-accent'>{item.duracao}</span>
+                        <span className='text-teal-300'>{item.duracao}</span>
                         <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.ocupacao}</h3>
                         <div className='flex items-center gap-3'>
                           {/* dot */}
-                          <span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
+                          <span className='w-[6px] h-[6px] rounded-full bg-teal-300'></span>
                           <p className='text-white/60'>{item.company}</p>
                         </div>
                       </li>
@@ -213,11 +213,11 @@ const Sobre = () => {
                     {education.items.map((item, index) => {
                       return (
                       <li key={index} className='bg-[#232329] h-[134px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1'>
-                        <span className='text-accent'>{item.duracao}</span>
+                        <span className='text-teal-300'>{item.duracao}</span>
                         <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.curso}</h3>
                         <div className='flex items-center gap-3'>
                           {/* dot */}
-                          <span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
+                          <span className='w-[6px] h-[6px] rounded-full bg-teal-300'></span>
                           <p className='text-white/60'>{item.instituicao}</p>
                         </div>
                       </li>
@@ -243,7 +243,7 @@ const Sobre = () => {
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
                             <TooltipTrigger className='w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group'>
-                              <div className='text-6xl group-hover:text-accent transition-all duration-300'>{skill.icon}</div>
+                              <div className='text-6xl group-hover:text-teal-300 transition-all duration-300'>{skill.icon}</div>
                             </TooltipTrigger>
                             <TooltipContent>
                               <p className='capitalize'>{skill.nome}</p>

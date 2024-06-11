@@ -16,7 +16,7 @@ const Home = () => {
             <span className="text-xl">Software Developer</span>
             <h1 className="h1">
               <strong>Hello World! 🌍</strong> <br />
-              I am <span className="text-accent">Greco Peres</span>
+              I am <span className="text-teal-300">Greco Peres</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white">
               Eu sou um desenvolvedor de sistemas, apaixonado pela área da programação e com muita sede de aprendizagem.
@@ -29,7 +29,7 @@ const Home = () => {
                 </Button>
               </a>
               <div className="mb-8 xl:mb-0">
-                <Social containerStyles="flex gap-6" iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500" />
+                <Social containerStyles="flex gap-6" iconStyles="w-9 h-9 border border-teal-300 rounded-full flex justify-center items-center text-teal-300 text-base hover:bg-teal-300 hover:text-primary hover:transition-all duration-500" />
               </div>
             </div>
           </div>

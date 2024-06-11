@@ -64,7 +64,7 @@ const Portfolio = () => {
                 {project.num}
               </div>
               {/* projeto - categoria */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-teal-300 transition-all duration-500 capitalize">
                 {project.categoria} projeto
               </h2>
               {/* descricao do projeto */}
@@ -73,7 +73,7 @@ const Portfolio = () => {
               <ul className="flex gap-4">
                 {project.tecnologias.map((item, index) =>{
                   return (
-                    <li key={index} className="text-xl text-accent">
+                    <li key={index} className="text-xl text-teal-300">
                       {item.nome}
                       {/* removendo sempre o ultimo ',' do array */}
                       {index !== project.tecnologias.length - 1 && ","}
@@ -90,7 +90,7 @@ const Portfolio = () => {
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        <BsArrowUpRight className="text-white text-3xl group-hover:text-teal-300" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Projeto Rodando</p>
@@ -103,7 +103,7 @@ const Portfolio = () => {
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        <BsGithub className="text-white text-3xl group-hover:text-teal-300" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Repositório GitHub</p>
@@ -132,7 +132,7 @@ const Portfolio = () => {
                 );
               })}
               {/* botoes do swiper */}
-              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all" />
+              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-teal-300 hover:bg-teal-400 text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all" />
             </Swiper>
           </div>
         </div>
