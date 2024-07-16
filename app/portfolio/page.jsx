@@ -14,12 +14,12 @@ const projects = [
   {
     num: '01',
     categoria: 'Front-End',
-    titulo: 'Projeto 1',
-    descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eveniet eius quaerat nesciunt pariatur fugiat asperiores fuga optio, libero sequi quas labore itaque, quam similique reprehenderit nostrum, dicta veniam aspernatur!',
-    tecnologias: [{nome: 'HTML5'}, {nome: 'CSS3'}, {nome: 'JavaScript'}],
-    imagem: '/assets/work/thumb1.png',
-    link: '',
-    github: '',
+    titulo: 'Lumiar Soluções',
+    descricao: 'Esta é uma landing page de serviços de combate ao incêndio, construída em React e TypeScript, com o objetivo de divulgar os serviços e promover a segurança da empresa.',
+    tecnologias: [{nome: 'React.JS'}, {nome: 'TypeScript'}, {nome: 'Tailwind.CSS'}, {nome: 'JavaScript'}, {nome: 'Node.JS'}, {nome: 'Vite'}, {nome: 'Email.JS'}],
+    imagem: '/assets/work/Portfolio-1.png',
+    link: 'https://lumiarsolucoes.com.br/',
+    github: 'https://github.com/GrecoPeres/Lumiar',
   },
   {
     num: '02',
@@ -27,7 +27,7 @@ const projects = [
     titulo: 'Projeto 2',
     descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eveniet eius quaerat nesciunt pariatur fugiat asperiores fuga optio, libero sequi quas labore itaque, quam similique reprehenderit nostrum, dicta veniam aspernatur!',
     tecnologias: [{nome: 'HTML5'}, {nome: 'CSS3'}, {nome: 'JavaScript'}],
-    imagem: '/assets/work/thumb2.png',
+    imagem: '/assets/work/Portfolio-2.png',
     link: '',
     github: '',
   },
@@ -36,8 +36,28 @@ const projects = [
     categoria: 'Front-End',
     titulo: 'Projeto 3',
     descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eveniet eius quaerat nesciunt pariatur fugiat asperiores fuga optio, libero sequi quas labore itaque, quam similique reprehenderit nostrum, dicta veniam aspernatur!',
-    tecnologias: [{nome: 'Next.Js'}, {nome: 'Tailwind.CSS'}],
-    imagem: '/assets/work/thumb3.png',
+    tecnologias: [{nome: 'React.JS'}, {nome: 'Tailwind.CSS'}],
+    imagem: '/assets/work/Portfolio-3.png',
+    link: '',
+    github: '',
+  },
+  {
+    num: '04',
+    categoria: 'FullStack',
+    titulo: 'Projeto 4',
+    descricao: 'Aplicação de gerenciamento de vendas p/ uso pessoal, com futuro suporte a bipagem de produtos em pedidos. Otimizzando a logística de forma eficiente.',
+    tecnologias: [{nome: 'PHP'}, {nome: 'JavaScript'}, {nome: 'Apache'}, {nome: 'MySQL'}],
+    imagem: '/assets/work/Portfolio-4.png',
+    link: 'http://3.88.9.36/',
+    github: 'https://github.com/GrecoPeres/Sistema-Vendas-PHP',
+  },
+  {
+    num: '05',
+    categoria: 'Front-End',
+    titulo: 'Projeto 5',
+    descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eveniet eius quaerat nesciunt pariatur fugiat asperiores fuga optio, libero sequi quas labore itaque, quam similique reprehenderit nostrum, dicta veniam aspernatur!',
+    tecnologias: [{nome: 'HTML5'}, {nome: 'CSS3'}, {nome: 'JavaScript'}],
+    imagem: '/assets/work/Portfolio-5.png',
     link: '',
     github: '',
   },
@@ -47,9 +67,9 @@ const Portfolio = () => {
   const [project, setProject] = useState(projects[0]);
 
   const handleSlideChange = (swiper) => {
-    // get current slide index
+    // pego o slide atual
     const currentIndex = swiper.activeIndex;
-    // atualizar índice do slide atual
+    // atualizo índice do slide atual
     setProject(projects[currentIndex]);
   };
 
@@ -125,7 +145,7 @@ const Portfolio = () => {
 
                       {/* imagem do projeto */}
                       <div className="relative w-full h-full">
-                        <Image src={project.imagem} fill className="object-cover" alt="" />
+                        <Image src={project.imagem} fill alt="" />
                       </div>
                     </div>
                   </SwiperSlide>
