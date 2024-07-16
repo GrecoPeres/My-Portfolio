@@ -37,7 +37,7 @@ const projects = [
     titulo: 'Projeto 3',
     descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eveniet eius quaerat nesciunt pariatur fugiat asperiores fuga optio, libero sequi quas labore itaque, quam similique reprehenderit nostrum, dicta veniam aspernatur!',
     tecnologias: [{nome: 'React.JS'}, {nome: 'Tailwind.CSS'}],
-    imagem: '/assets/work/Portfolio-3.png',
+    imagem: '/assets/work/Portfolio-5.png',
     link: '',
     github: '',
   },
@@ -57,7 +57,7 @@ const projects = [
     titulo: 'Projeto 5',
     descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eveniet eius quaerat nesciunt pariatur fugiat asperiores fuga optio, libero sequi quas labore itaque, quam similique reprehenderit nostrum, dicta veniam aspernatur!',
     tecnologias: [{nome: 'HTML5'}, {nome: 'CSS3'}, {nome: 'JavaScript'}],
-    imagem: '/assets/work/Portfolio-5.png',
+    imagem: '/assets/work/Portfolio-3.png',
     link: '',
     github: '',
   },
@@ -79,7 +79,7 @@ const Portfolio = () => {
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
-              {/* numero do projeto ficando em outline */}
+              {/* n° do projeto ficando em outline */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
@@ -89,13 +89,12 @@ const Portfolio = () => {
               </h2>
               {/* descricao do projeto */}
               <p className="text-white/60">{project.descricao}</p>
-              {/* tecnologias do projeto */}
-              <ul className="flex gap-4">
-                {project.tecnologias.map((item, index) =>{
+              {/* tecnologias q usei no projeto */}
+              <ul className="custom-tecnologias">
+                {project.tecnologias.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-teal-300">
                       {item.nome}
-                      {/* removendo sempre o ultimo ',' do array */}
                       {index !== project.tecnologias.length - 1 && ","}
                     </li>
                   );

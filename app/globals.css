@@ -31,4 +31,16 @@
   .text-outline-hover {
     -webkit-text-stroke: 1px #99F6FF;
   }
+
+  ul.custom-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 100%;
+  }
+
+  ul.custom-tecnologias li {
+    flex: 1 1 calc(20% - 1rem);
+    text-align: left; 
+  }
 }
