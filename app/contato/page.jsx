@@ -38,13 +38,11 @@ const Contato = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-white"> I turn coffee into <span className="text-teal-300"> &lt;/code&gt; </span> </h3>
               <p className="text-white/60">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-              {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="nome" placeholder="Nome completo" />
                 <Input type="telefone" placeholder="Telefone" />
-                <Input type="email" placeholder="E-mail" />
+                <Input type="email" placeholder="E-mail" className="md:col-span-2" />
               </div>
-              {/* select */}
               <Select>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Selecione o serviço" />
@@ -58,7 +56,7 @@ const Contato = () => {
                   </SelectGroup>
                 </SelectContent>
               </Select>
-              {/* texto */}
+              {/* msg */}
               <Textarea className="h-[200px]" placeholder="Digite sua mensagem aqui." />
               <Button size="md" className="max-w-40">Enviar</Button>
             </form>
