@@ -7,7 +7,7 @@ import Photo from "../components/Photo";
 // import CV from '../public/assets/files/CV - Greco Fernando de Macedo Peres.pdf'
 
 const Home = () => {
-  const cvPath = "/assets/files/CV - Greco Fernando de Macedo Peres.pdf";
+  const cvPath = "/assets/files/CV GRECO FERNANDO DE MACEDO PERES.pdf";
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">

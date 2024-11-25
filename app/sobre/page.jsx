@@ -1,6 +1,6 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, } from 'react-icons/fa';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPhp } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs } from 'react-icons/si';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../components/ui/tabs';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../components/ui/tooltip';
@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 // dados - sobre
 const about = {
   titulo: "Sobre mim",
-  descricao: "Lorem ipsum dolor sit consectetur adiposincing elit. ",
+  descricao: "",
   info: [
     {
       NomeCampo: "Nome",
@@ -43,7 +43,7 @@ const about = {
 const experience = {
   icon: '/assets/resume/badge.svg',
   titulo: 'Minhas Experiências',
-  descricao: 'Lorem Ipsum dolor sit amet consectetuter',
+  descricao: '',
   items: [
     {
       company: "EcoPower",
@@ -62,7 +62,7 @@ const experience = {
     },
     {
       company: "UNIFEB",
-      ocupacao: "Estagiotário",
+      ocupacao: "Estagiário",
       duracao: "2021 - 2022",
     },
   ]
@@ -72,7 +72,7 @@ const experience = {
 const education = {
   icon: '/assets/resume/cap.svg',
   titulo: 'Meus Estudos',
-  descricao: 'Lorem Ipsum dolor sit amet consectetuter',
+  descricao: '',
   items: [
     {
       instituicao: "UNIFEB",
@@ -125,7 +125,7 @@ const education = {
 // minhas skills
 const skills = {
   titulo: 'Minhas Habilidades',
-  descricao: 'Lorem Ipsum dolor sit amet consectetuter',
+  descricao: '',
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -154,6 +154,10 @@ const skills = {
     {
       icon: <SiNextdotjs />,
       nome: "Next.JS",
+    },
+    {
+      icon: <FaPhp />,
+      nome: "PHP",
     },
     {
       icon: <FaFigma />,
